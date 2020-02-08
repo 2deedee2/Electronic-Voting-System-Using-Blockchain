@@ -16,4 +16,5 @@ Route::get('/','StaticPagesController@home')->name('home');
 
 
 Route::get('/login','UsersController@login')->name('login');
-Route::get('/register','UsersController@register')->name('register');
+Route::get('register','UsersController@register')->name('register');
+Route::resource('users','UsersController');
