@@ -12,11 +12,6 @@ class UsersController extends Controller
        return view('users.register');
     }
 
-    public function login()
-    {
-        return view('users.login');
-    }
-
     public function show(User $user)
     {
         return view('users.show', compact('user'));
