@@ -24,6 +24,7 @@ class SessionsController extends Controller
             return redirect()->route('home');
         } else {
             session()->flash('danger','Email or Password is incorrect!');
+            return redirect()->route('login');
         }
 
 
