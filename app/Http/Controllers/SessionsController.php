@@ -20,7 +20,8 @@ class SessionsController extends Controller
         // validate account
         if(Auth::attempt($credentials)){
             session()->flash('success','Login Successful!');
-            return redirect()->route('users.show',[Auth::user()]);
+            //return redirect()->route('home',[Auth::user()]);
+            return redirect()->route('home');
         } else {
             session()->flash('danger','Email or Password is incorrect!');
         }

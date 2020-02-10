@@ -7,7 +7,7 @@
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum provident omnis hic placeat ad dolore quibusdam minima ipsum rem eos? Esse ducimus unde tempora cupiditate ea reiciendis consequatur recusandae facere.</p>
     <hr class="my-4">
 
-     <a class="btn btn-primary btn-lg" href="election.html" role="button">Start Voting</a>
+     <a class="btn btn-primary btn-lg" href="{{ route('election') }}" role="button">Start Voting</a>
 </div>
 
 @stop
