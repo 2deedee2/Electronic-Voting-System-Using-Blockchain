@@ -24,3 +24,4 @@ Route::delete('logout','SessionsController@destory')->name('logout');
 
 
 Route::get('election','ElectionController@create')->name('election');
+Route::post('election','ElectionController@store')->name('election');

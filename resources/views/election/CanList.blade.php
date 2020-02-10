@@ -5,7 +5,8 @@
 <?php $icon = "https://icons-for-free.com/iconfiles/png/512/business+face+people+icon-1320086457520622872.png" ?>
 <div class="container">
         <div class="electionCard">
-            <form action="election.php" method="POST">
+            <form action="{{ route('election') }}" method="POST">
+                {{ csrf_field() }}
                 <div class="cards-col1">
                     <div class="card-group">
                         <div class="card">
@@ -16,7 +17,7 @@
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                             <div class="cardBtn">
-                                    <a href="javascript:can1();"><button type="button" id="can1" name="can1" value="can1" class="btn btn-info">vote</button></a>
+                                <input type="submit" name="1" value="Vote">
                             </div>
                         </div>
                         <div class="card">

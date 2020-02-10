@@ -10945,3 +10945,18 @@ section.user_info h1 {
   border-radius: 50%;
 }
 
+.electionCard {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.electionCard .cards-col1 {
+  margin-bottom: 20px;
+}
+
+.electionCard .card {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+

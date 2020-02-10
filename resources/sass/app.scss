@@ -57,3 +57,19 @@ section.user_info {
   max-width: 50px;
   border-radius: 50%;
 }
+
+
+.electionCard{
+  width: 900px;
+  margin: 0 auto;
+
+  .cards-col1{
+    margin-bottom: 20px;
+  }
+
+  .card{
+    margin-left:10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+}

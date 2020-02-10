@@ -10,4 +10,16 @@ class ElectionController extends Controller
     {
         return view('election.CanList');
     }
+
+    public function store()
+    {
+       if  (isset($_POST['1'])){
+        return redirect()->route('home');
+       }
+       else{
+           return "hellpo";
+       }
+
+    }
+
 }
