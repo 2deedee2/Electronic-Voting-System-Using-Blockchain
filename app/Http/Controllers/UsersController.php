@@ -33,6 +33,7 @@ class UsersController extends Controller
             'password' => bcrypt($request->password),
         ]);
 
+        Auth::login($user);
         session()->flash('success',"Welcom to the Blockchain Voting System");
         return redirect()->route('users.show',[$user]);
     }
