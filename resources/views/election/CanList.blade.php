@@ -17,33 +17,29 @@
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                             <div class="cardBtn">
-                                <input type="submit" name="1" value="Vote">
+                                <input class="submitBtn" type="submit" name="1" value="Vote">
                             </div>
                         </div>
                         <div class="card">
                             <img src="{{ $icon }}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Candidate 2</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, aperiam, fuga, corrupti ab eveniet laborum nostrum quam accusamus saepe numquam optio nisi? Impedit illo ad eum molestiae corporis harum esse.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                             <div class="cardBtn">
-                                    <a href="javascript:can2();"><button type="button" name="can2" value="can2" class="btn btn-info">vote</button></a>
+                                <input class="submitBtn" type="submit" name="2" value="Vote">
                             </div>
                         </div>
                         <div class="card">
                             <img src="{{ $icon }}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Candidate 3</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional
-                                    content. This card has even longer content than the first to show that equal height
-                                    action.</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis, distinctio expedita dolorem possimus nesciunt qui asperiores enim maxime fugiat fuga nulla ipsa quae laborum explicabo vero molestias quam. Assumenda.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                             <div class="cardBtn">
-                                    <a href="javascript:can3();"><button type="button" name="can3" value="can3" class="btn btn-info">vote</button></a>
+                                <input class="submitBtn" type="submit" name="3" value="Vote">
                             </div>
                         </div>
                     </div>
@@ -54,31 +50,34 @@
                         <div class="card">
                             <img src="{{ $icon }}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional
-                                    content. This content is a little bit longer.</p>
+                                <h5 class="card-title">Candidate 4</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, consectetur quod labore id ipsum exercitationem, officiis explicabo et ea animi velit provident dolore unde necessitatibus cupiditate! Eum sit culpa eos.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                            <div class="cardBtn">
+                                <input class="submitBtn" type="submit" name="4" value="Vote">
                             </div>
                         </div>
                         <div class="card">
                             <img src="{{ $icon }}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
+                                <h5 class="card-title">Candidate 5</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, consectetur quod labore id ipsum exercitationem, officiis explicabo et ea animi velit provident dolore unde necessitatibus cupiditate! Eum sit culpa eos.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                            <div class="cardBtn">
+                                <input class="submitBtn" type="submit" name="5" value="Vote">
                             </div>
                         </div>
                         <div class="card">
                             <img src="{{ $icon }}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional
-                                    content. This card has even longer content than the first to show that equal height
-                                    action.</p>
+                                <h5 class="card-title">Candidate 6</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, consectetur quod labore id ipsum exercitationem, officiis explicabo et ea animi velit provident dolore unde necessitatibus cupiditate! Eum sit culpa eos.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                            <div class="cardBtn">
+                                <input class="submitBtn" type="submit" name="6" value="Vote">
                             </div>
                         </div>
                     </div>

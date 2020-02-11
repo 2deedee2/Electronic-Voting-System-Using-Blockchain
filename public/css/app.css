@@ -10960,3 +10960,12 @@ section.user_info h1 {
   padding: 10px;
 }
 
+.submitBtn {
+  width: 150px;
+  height: 40px;
+  background-color: #17a2b8;
+  color: white;
+  text-align: center;
+  margin-left: 57px;
+}
+

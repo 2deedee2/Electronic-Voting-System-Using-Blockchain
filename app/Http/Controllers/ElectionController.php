@@ -15,7 +15,7 @@ class ElectionController extends Controller
     public function store()
     {
        if  (isset($_POST['1'])){
-        $result = $this->PostDataToChain('Joe','777');
+        $result = $this->PostDataToChain('Joe','1');
         //$result = $this->getChain();
         return $result;
         //session()->flash('success','Your ballot is added into blockchain.');
@@ -29,12 +29,12 @@ class ElectionController extends Controller
 
     public function PostDataToChain($uname,$ca)
     {
+        $url = $this->getURL();
         $Ballot = array(
             'sender' => "$uname",
-            'recipient' => "1ac215e48ad94c3f932fbbcd7dfd1798",
+            'recipient' => "$url",
             'ballot' => "$ca"
         );
-        $url = $this->getURL();
         $AddBallotUrl = "$url/transactions/new";
         $ch = curl_init($AddBallotUrl);
         $jsonDataEncoded = json_encode($Ballot);
@@ -60,27 +60,5 @@ class ElectionController extends Controller
     public function getURL()
     {
         return $url = 'http://192.168.31.173:8080';
-    }
-
-    public function postTest($uname,$ca)
-    {
-        $client = new \GuzzleHttp\Client();
-        $url = "http://192.168.31.173:8080/transactions/new";
-
-
-
-        $Ballot = [
-            'form_params' => [
-                'sender' => "$uname",
-                'recipient' => "1ac215e48ad94c3f932fbbcd7dfd1798",
-                'ballot' => "$ca"
-            ]
-            ];
-
-        $request = $client->request('POST', $url,  $Ballot);
-        $response = $request->send();
-
-        dd($response);
-        return $response;
     }
 }
