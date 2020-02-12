@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Log;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ElectionController extends Controller
 {
@@ -14,34 +14,36 @@ class ElectionController extends Controller
 
     public function store()
     {
+    $success_str = "Your ballot has been added into blockchain.";
        if(isset($_POST['1'])){
         $blockNo = $this->PostDataToChain('Joe','1');
-        session()->flash('success',"Thanks! Your ballot has been added into blockchain. (Block $blockNo)");
+        Alert::swal("htllo");
+        Alert::success('Thanks!',"$success_str (Block $blockNo)");
         return redirect()->route('home');
        }
        else if(isset($_POST['2'])){
         $blockNo = $this->PostDataToChain('Joe','2');
-        session()->flash('success',"Thanks! Your ballot has been added into blockchain. (Block $blockNo)");
+        Alert::success('Thanks!',"$success_str (Block $blockNo)");
         return redirect()->route('home');
        }
        else if(isset($_POST['3'])){
         $blockNo = $this->PostDataToChain('Joe','3');
-        session()->flash('success',"Thanks! Your ballot has been added into blockchain. (Block $blockNo)");
+        Alert::success('Thanks!',"$success_str (Block $blockNo)");
         return redirect()->route('home');
         }
         else if(isset($_POST['4'])){
             $blockNo = $this->PostDataToChain('Joe','4');
-            session()->flash('success',"Thanks! Your ballot has been added into blockchain. (Block $blockNo)");
+            Alert::success('Thanks!',"$success_str (Block $blockNo)");
             return redirect()->route('home');
         }
         else if(isset($_POST['5'])){
             $blockNo = $this->PostDataToChain('Joe','5');
-            session()->flash('success',"Thanks! Your ballot has been added into blockchain. (Block $blockNo)");
+            Alert::success('Thanks!',"$success_str (Block $blockNo)");
             return redirect()->route('home');
         }
         else if(isset($_POST['6'])){
             $blockNo = $this->PostDataToChain('Joe','6');
-            session()->flash('success',"Thanks! Your ballot has been added into blockchain. (Block $blockNo)");
+            Alert::success('Thanks!',"$success_str (Block $blockNo)");
             return redirect()->route('home');
         }
 

@@ -19,7 +19,7 @@
 </div>
 
 <script src="{{ mix('js/app.js') }}"></script>
-
-
+@include('sweetalert::alert')
+<script src="sweetalert.all.min.js"></script>
 </body>
 </html>
