@@ -8,6 +8,11 @@
     <hr class="my-4">
 
      <a class="btn btn-primary btn-lg" href="{{ route('election') }}" role="button">Start Voting</a>
+     @if (Auth::check())
+        @if (Auth::user()->name == 'Admin')
+            <a class="btn btn-info btn-lg" href="{{ route('gen_result') }}" role="button">Start Voting</a>
+        @endif
+     @endif
 </div>
 
 @stop

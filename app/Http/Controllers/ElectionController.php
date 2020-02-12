@@ -17,7 +17,6 @@ class ElectionController extends Controller
     $success_str = "Your ballot has been added into blockchain.";
        if(isset($_POST['1'])){
         $blockNo = $this->PostDataToChain('Joe','1');
-        Alert::swal("htllo");
         Alert::success('Thanks!',"$success_str (Block $blockNo)");
         return redirect()->route('home');
        }
@@ -71,6 +70,10 @@ class ElectionController extends Controller
         $blockNo = $str->indexNo;
         return $blockNo;
     }
+
+
+
+
 
     public function getChain()
     {
