@@ -26,7 +26,7 @@ Route::delete('logout','SessionsController@destory')->name('logout');
 Route::get('election','ElectionController@create')->name('election');
 Route::post('election','ElectionController@store')->name('election');
 
-Route::get('result','ResultController@gen_result')->name('gen_result');
+Route::get('gen_result','ResultController@gen_result')->name('gen_result');
 Route::get('result','ResultController@show_result')->name('show_result');
 
 

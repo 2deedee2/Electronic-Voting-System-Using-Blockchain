@@ -46,18 +46,42 @@ class ResultController extends Controller
         $key_of_max = key($check_array);
 
         $num = 0;
-        foreach($check_repeat as $i){
+        foreach(array_slice($check_repeat,1) as $i){
             if(max($check_repeat) == $i){
                 $num +=1;
                 break;
             }
         }
+        //prepear pi chart data
+        $can1 = $final_ballot[1];
+        $can2 = $final_ballot[2];
+        $can3 = $final_ballot[3];
+        $can4 = $final_ballot[4];
+        $can5 = $final_ballot[5];
+        $can6 = $final_ballot[6];
+
         if($num > 0){
+            $num = 0;
             session()->flash('danger','Vote again!');
             return redirect()->route('home');
         }else{
-            return redirect()->route('show_result');
+            $num = 0;
+            $winner = 'Candidate ' . $key_of_max;
+            $eleTitle = "2020 Student Union Election";
+            return view('election.result',[
+                'winner'=>$winner,
+                'eleTitle'=>$eleTitle,
+                'can1'=>$can1,
+                'can2'=>$can2,
+                'can3'=>$can3,
+                'can4'=>$can4,
+                'can5'=>$can5,
+                'can6'=>$can6,
+            ]);
         }
+
+
+
 
     }
 
@@ -65,6 +89,7 @@ class ResultController extends Controller
     {
         return view('election.result');
     }
+
 
 
     public function getChain()

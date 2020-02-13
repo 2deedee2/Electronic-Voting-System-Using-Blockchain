@@ -10,7 +10,7 @@
      <a class="btn btn-primary btn-lg" href="{{ route('election') }}" role="button">Start Voting</a>
      @if (Auth::check())
         @if (Auth::user()->name == 'Admin')
-            <a class="btn btn-info btn-lg" href="{{ route('gen_result') }}" role="button">Start Voting</a>
+            <a class="btn btn-info btn-lg" href="{{ route('gen_result') }}" role="button">Generate Result</a>
         @endif
      @endif
 </div>
