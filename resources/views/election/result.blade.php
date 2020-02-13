@@ -49,7 +49,7 @@
 
 
 <div id="chart_div"></div>
-
+<a href=" {{ route('home') }} " class="btn btn-primary">Back</a>
 
 
 @stop
