@@ -10996,3 +10996,13 @@ section.user_info h1 {
   margin-left: 150px;
 }
 
+.votingStatus {
+  float: right;
+  position: relative;
+  top: -80px;
+  left: -50px;
+  background-color: yellow;
+  font-size: 30px;
+  border: 1px solid black;
+}
+

@@ -30,3 +30,14 @@ Route::get('gen_result','ResultController@gen_result')->name('gen_result');
 Route::get('result','ResultController@show_result')->name('show_result');
 
 
+//get Voting table
+Route::prefix('database')->group(function() {
+    Route::get('insert','BallotCreateController@insert');
+    Route::get('get','BallotCreateController@get');
+});
+
+Route::prefix('model')->group(function() {
+    Route::get('index','ModelController@index');
+    Route::get('getStatus','ModelController@getStatus');
+});
+
