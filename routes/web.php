@@ -41,3 +41,6 @@ Route::prefix('model')->group(function() {
     Route::get('getStatus','ModelController@getStatus');
 });
 
+//change status
+Route::get('start_voting','StatusController@start')->name('start_voting');
+Route::get('close_voting','StatusController@close')->name('close_voting');

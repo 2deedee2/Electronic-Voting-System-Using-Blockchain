@@ -48,6 +48,7 @@ class ResultController extends Controller
         $num = 0;
         foreach(array_slice($check_repeat,1) as $i){
             if(max($check_repeat) == $i){
+                //echo $i . "</br>";
                 $num +=1;
                 break;
             }
@@ -59,10 +60,16 @@ class ResultController extends Controller
         $can4 = $final_ballot[4];
         $can5 = $final_ballot[5];
         $can6 = $final_ballot[6];
+        //echo max($check_repeat) . "</br>";
+        //echo $num . "</br>";
+        ///////---------------------------
+        //TODO: Fix Problem
+        //Only first one can work
 
         if($num > 0){
             $num = 0;
             session()->flash('danger','Vote again!');
+            //var_dump($check_repeat);
             return redirect()->route('home');
         }else{
             $num = 0;
