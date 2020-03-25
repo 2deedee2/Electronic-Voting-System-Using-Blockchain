@@ -87,6 +87,10 @@ class ElectionController extends Controller
 
     public function getURL()
     {
-        return $url = 'http://192.168.31.173:8080';
+        //return $url = 'http://192.168.31.173:8080';
+
+        //Macdonload Temp address
+        return $url = 'http://10.192.48.102:5000';
+
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBallotTable extends Migration
+class CreateBallotsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateBallotTable extends Migration
      */
     public function up()
     {
-        Schema::create('ballot', function (Blueprint $table) {
+        Schema::create('ballots', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->string('content');
